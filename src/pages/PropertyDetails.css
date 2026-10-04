@@ -1,0 +1,110 @@
+.property-page {
+  min-height: 100vh;
+  background: #f7f7fb;
+  padding: 50px 20px;
+}
+
+.property-container {
+  max-width: 850px;
+  margin: 0 auto;
+  background: white;
+  padding: 40px;
+  border-radius: 20px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+.property-header {
+  margin-bottom: 35px;
+}
+
+.property-header h1 {
+  margin: 0;
+  font-size: 32px;
+}
+
+.property-header p {
+  color: #777;
+  margin-top: 8px;
+}
+
+.form-section {
+  margin-bottom: 35px;
+}
+
+.form-section h2 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+.form-section label {
+  display: block;
+  font-weight: 600;
+  margin-bottom: 8px;
+  margin-top: 18px;
+}
+
+.form-section input,
+.form-section select,
+.form-section textarea {
+  width: 100%;
+  padding: 13px 14px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  font-size: 15px;
+  box-sizing: border-box;
+}
+
+.form-section textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+.two-column {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+
+.form-buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 30px;
+}
+
+.back-button,
+.continue-button {
+  padding: 14px 24px;
+  border-radius: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.back-button {
+  background: white;
+  border: 1px solid #ccc;
+}
+
+.continue-button {
+  background: #111;
+  color: white;
+  border: none;
+}
+
+.continue-button:hover {
+  opacity: 0.9;
+}
+
+@media (max-width: 600px) {
+  .property-container {
+    padding: 25px;
+  }
+
+  .two-column {
+    grid-template-columns: 1fr;
+    gap: 0;
+  }
+
+  .form-buttons {
+    gap: 10px;
+  }
+}
